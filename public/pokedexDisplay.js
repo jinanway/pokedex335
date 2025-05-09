@@ -4,10 +4,11 @@ function displayPokeDex(pokemonList){
     
     pokemonList.forEach(pokemon => {
         display += `<div class='cards'>`;
+        display += `<img src='${pokemon.image}' alt='${pokemon.name} image'<br>`;
         display += `<strong>${pokemon.name}</strong><br>`
         display += `${pokemon.id}<br>`;
         display += `${pokemon.types}<br>`;
-        display += `</div>0`;
+        display += `</div>`;
     });
     display += "</div>";
     document.getElementById("display").innerHTML = display;
