@@ -16,7 +16,7 @@ function displayPokeDex(pokemonList){
 }
 
 
-window.addEventListener("DOMContentLoaded", () => { // Can be revised???
+window.addEventListener("DOMContentLoaded", () => { // Can be revised??? ???
     fetch("/pokemon-data")
         .then(res => res.json())
         .then(pokemons => {
